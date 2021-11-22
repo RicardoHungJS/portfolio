@@ -1,0 +1,13 @@
+<div class="trabajos-container">
+  <h1 class="titulo-trabajos">MIS TRABAJOS</h1>
+  <div class="tarjetas-container">
+    <div class="tarjeta-trabajo" *ngFor="let tarjeta of tarjetasExp">
+      <img class="back-img" src={{tarjeta.imagen}} alt="">
+      <div class="text-container">
+        <h2>{{tarjeta.titulo}}</h2>
+        <p>{{tarjeta.descripcion}}</p>
+        <a href="{{tarjeta.link}}" target="_blank">Visitar página</a>
+      </div>
+    </div>
+  </div>
+</div>
