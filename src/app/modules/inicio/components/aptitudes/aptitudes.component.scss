@@ -1,56 +1,170 @@
 @import '../../../../../assets/css/basics/variables.scss';
 
 .aptitudes-container {
-  perspective: 1000px;
+  position: relative;
   width: 100%;
   height: 100vh;
   scroll-snap-align: start;
-  background-color: $colorPrincipal;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: space-evenly;
   align-items: center;
   padding-top: 70px;
+  overflow: hidden;
+
+  .titulo-trabajos {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    margin: 0;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bg-moving {
+    animation: slide 8s ease-in-out infinite alternate;
+    background-image: linear-gradient(20deg, #f2b138 50%, #003f63 50%);
+    bottom: 0;
+    left: -50%;
+    opacity: .5;
+    position: fixed;
+    right: -50%;
+    top: 0;
+    z-index: -1;
+  }
+
+  .bg-moving2 {
+    animation-direction: alternate-reverse;
+    animation-duration: 12s;
+  }
+
+  .bg-moving3 {
+    animation-duration: 10s;
+  }
+
+  @keyframes slide {
+    0% {
+      transform: translateX(-15%);
+    }
+
+    100% {
+      transform: translateX(25%);
+    }
+  }
+
+  .general-blur {
+    position: absolute;
+    width: 100%;
+    height: 140vh;
+    backdrop-filter: blur(10px);
+  }
 
   .tarjeta-aptitudes {
-    width: 38%;
-    height: 90%;
-    background-color: #ffffff80;
+    width: 70%;
+    height: 75%;
+    padding: 10px;
     border-radius: 10px;
-    -webkit-box-shadow: 10px 10px 10px 1px #0000002e;
-    -moz-box-shadow: 10px 10px 10px 1px #0000002e;
-    box-shadow: 10px 10px 10px 1px #0000002e;
+    // background-color: #ffffff80;
+    // backdrop-filter: blur(20px);
     transition: all 0.3s;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    // -webkit-box-shadow: 10px 10px 10px 1px #0000002e;
+    // -moz-box-shadow: 10px 10px 10px 1px #0000002e;
+    // box-shadow: 10px 10px 10px 1px #0000002e;
 
     .aptitud-container {
       position: relative;
-      width: 22%;
+      width: 20%;
       height: 20%;
-      background-color: #faebd7;
-      border-radius: 10px;
-      overflow: hidden;
-      transform: rotateY(180deg);
+      margin: 15px;
 
-      &::after {
-        content: '';
+      /* &:hover {
+        .aptitud {
+          transform: rotateY(-180deg);
+        }
+      } */
+
+      .aptitud {
+        perspective: 400px;
         position: absolute;
-        z-index: 10;
         width: 100%;
         height: 100%;
-        background-color: aqua;
-        transform: rotateY(180deg);
-      }
+        border-radius: 10px;
 
-      &::before {
-        content: '';
-        position: absolute;
-        z-index: 10;
-        width: 100%;
-        height: 100%;
-        background-color: #bfff00;
+        &:hover {
+          .front {
+            transform: rotateY(-180deg);
+          }
+
+          .back {
+            transform: rotateY(0deg);
+          }
+        }
+
+        @mixin card-sides ($color) {
+          transform-style: preserve-3d;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: $color;
+          border-radius: 10px;
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+          transition: all 1s cubic-bezier(0.4, 0.2, 0.2, 1);
+          -webkit-box-shadow: 10px 10px 10px 1px #0000002e;
+          -moz-box-shadow: 10px 10px 10px 1px #0000002e;
+          box-shadow: 10px 10px 10px 1px #0000002e;
+        }
+
+        .front {
+          @include card-sides(#ffffff);
+
+          .img-aptitud {
+            width: 100%;
+            height: 100%;
+            padding: 15px;
+            object-fit: contain;
+            object-position: center
+          }
+        }
+
+        .back {
+          @include card-sides(#ffffff56);
+          color: #fff;
+          transform: rotateY(180deg);
+
+          background: linear-gradient(-45deg, #00000017, #06060645, #00000079, #000000);
+          background-size: 400% 400%;
+          animation: gradient 15s ease infinite;
+
+          @keyframes gradient {
+            0% {
+              background-position: 0% 50%;
+            }
+
+            50% {
+              background-position: 100% 50%;
+            }
+
+            100% {
+              background-position: 0% 50%;
+            }
+          }
+
+          p {
+            font-size: 2em;
+            font-weight: bold;
+          }
+        }
       }
     }
   }

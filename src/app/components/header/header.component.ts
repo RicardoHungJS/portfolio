@@ -12,4 +12,13 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  moveToSection(partOfPage) {
+    if (partOfPage != 0) {
+      let alturaPagina = document.body.clientHeight;
+      window.scroll(0, Math.round(alturaPagina / partOfPage));
+    } else {
+      window.scroll(0, 0);
+    }
+  }
+
 }
