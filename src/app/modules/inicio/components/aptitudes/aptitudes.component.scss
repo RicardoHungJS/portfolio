@@ -67,28 +67,17 @@
     height: 75%;
     padding: 10px;
     border-radius: 10px;
-    // background-color: #ffffff80;
-    // backdrop-filter: blur(20px);
     transition: all 0.3s;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    // -webkit-box-shadow: 10px 10px 10px 1px #0000002e;
-    // -moz-box-shadow: 10px 10px 10px 1px #0000002e;
-    // box-shadow: 10px 10px 10px 1px #0000002e;
 
     .aptitud-container {
       position: relative;
       width: 20%;
       height: 20%;
       margin: 15px;
-
-      /* &:hover {
-        .aptitud {
-          transform: rotateY(-180deg);
-        }
-      } */
 
       .aptitud {
         perspective: 400px;

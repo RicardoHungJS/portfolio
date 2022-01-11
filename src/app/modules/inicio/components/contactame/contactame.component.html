@@ -41,7 +41,10 @@
 
     <div class="info-contact-container">
       <p class="title-contact">Redes sociales:</p>
-      <p class="info-contact">1019073994</p>
+      <div class="social-media-icons">
+        <img class="icon-media" src="{{media.icon}}" alt="" *ngFor="let media of socialMedia"
+          (click)="redirigir(media.url)">
+      </div>
     </div>
 
     <!-- <div class="buttons-container">

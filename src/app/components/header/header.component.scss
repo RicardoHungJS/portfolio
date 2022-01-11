@@ -26,7 +26,7 @@
     .RHL-logo {
       grid-column: 1/2;
       margin: 10px 0;
-      background-image: url(../../../assets/img/logos/rhl-multi-color.svg);
+      background-image: url(^assets/img/logos/rhl-multi-color.svg);
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center;
@@ -96,9 +96,15 @@
         width: 2em;
         height: 2em;
 
-        &:hover {
-          .lenguajeCard {
-            cursor: pointer;
+        .checkbox-languaje {
+          cursor: pointer;
+          position: absolute;
+          z-index: 100;
+          width: 100%;
+          height: 100%;
+          opacity: 0;
+
+          &:checked~.lenguajeCard {
             transform: rotateY(180deg);
           }
         }
@@ -120,7 +126,7 @@
             width: 100%;
             height: 100%;
             border: 1px solid rgb(130, 130, 130);
-            background-image: url(../../../assets/img/imagenes/banderaEstadosUnidos.png);
+            background-image: url(^assets/img/imagenes/banderaEstadosUnidos.png);
             background-size: cover;
           }
 
@@ -132,7 +138,7 @@
             height: 100%;
             transform: rotateY(180deg);
             border: 1px solid rgb(130, 130, 130);
-            background-image: url(../../../assets/img/imagenes/banderaColombia.png);
+            background-image: url(^assets/img/imagenes/banderaColombia.png);
             background-size: cover;
           }
         }
