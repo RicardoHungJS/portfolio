@@ -1,5 +1,5 @@
 <div class="trabajos-container">
-  <h1 class="titulo-trabajos">MIS TRABAJOS</h1>
+  <h1 class="titulo-trabajos">{{'trabajosComponent.title' | translate}}</h1>
   <div class="tarjetas-container">
     <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
       <div ngxSlickItem class="tarjeta-trabajo" *ngFor="let tarjeta of tarjetasExp">

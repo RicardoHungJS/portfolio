@@ -4,14 +4,14 @@
     <div class='RHL-logo' (click)="moveToSection(0)"></div>
     
     <ul class="optionsContainer">
-      <li><a class="headerOption" (click)="moveToSection(6)">Trabajos</a></li>
-      <li><a class="headerOption" (click)="moveToSection(2)">Conocimientos</a></li>
-      <li><a class="headerOption" (click)="moveToSection(1)">Contáctame</a></li>
+      <li><a class="headerOption" (click)="moveToSection(6)">{{ 'headerComponent.link1' | translate }}</a></li>
+      <li><a class="headerOption" (click)="moveToSection(2)">{{ 'headerComponent.link2' | translate }}</a></li>
+      <li><a class="headerOption" (click)="moveToSection(1)">{{ 'headerComponent.link3' | translate }}</a></li>
     </ul>
 
     <div class="lenguajeContainer">
       <div class="card3D">
-        <input class="checkbox-languaje" type="checkbox">
+        <input class="checkbox-languaje" type="checkbox" (change)="cambiarIdioma(langAns)">
         <div class="lenguajeCard">
           <div class="frontFace"></div>
           <div class="backFace"></div>

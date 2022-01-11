@@ -1,0 +1,30 @@
+{
+  "headerComponent": {
+    "link1": "My jobs",
+    "link2": "Knowledge",
+    "link3": "Contact me"
+  },
+
+  "inicioComponent": {
+    "txt1": "Hi! i'm Ricardo",
+    "txt2": "Front end developer",
+    "txt3": "I have two years of experience as a frontend developer. <br> Most of my knowledge has been acquired in a self-taught way. <br> I am currently developing large projects and learning new technologies.",
+    "txt4": "If you want to know more about my work, I invite you to continue exploring my portfolio."
+  },
+
+  "trabajosComponent": {
+    "title": "MY WORKS"
+  },
+
+  "aptitudesComponent": {
+    "title": "MY KNOWLEDGE"
+  },
+
+  "contactameComponent": {
+      "title": "CONTACT ME",
+      "subtitle1": "Phone",
+      "subtitle2": "Email",
+      "subtitle3": "Social networks"
+  }
+}
+

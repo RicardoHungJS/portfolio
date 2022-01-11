@@ -3,12 +3,10 @@
   <div class="informationContainer">
     <div class="picture"></div>
     <div class="information">
-      <h1>¡Hola! Soy Ricardo</h1>
-      <h2>Desarrollador frontend 😏</h2>
-      <p>Tengo dos años de experiencia como desarrollador frontend. <br> La mayoría de mi conocimiento ha sido adquirido
-        de manera autodidacta. <br> Actualmente me encuentro desarrollando grandes proyectos y aprendiendo nuevas
-        tecnologías.</p>
-      <p>Si quieres conocer más sobre mi trabajo te invito a seguir explorando mi portafolio.</p>
+      <h1>{{'inicioComponent.txt1' | translate}}</h1>
+      <h2>{{'inicioComponent.txt2' | translate}} 😏</h2>
+      <p [innerHTML]="'inicioComponent.txt3' | translate"></p>
+      <p>{{'inicioComponent.txt4' | translate}}</p>
     </div>
   </div>
 </div>

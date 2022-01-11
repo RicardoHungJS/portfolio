@@ -1,5 +1,5 @@
 <div class="contactame-container">
-  <h1 class="titulo-trabajos">CONTÁCTAME</h1>
+  <h1 class="titulo-trabajos">{{'contactameComponent.title' | translate}}</h1>
   <div class="second-bg"></div>
   <form class="contac-form-container">
     <!-- <h2 class="form-title">Formulario de contacto</h2> -->
@@ -30,17 +30,17 @@
     </div> -->
 
     <div class="info-contact-container">
-      <p class="title-contact">Número telefónico:</p>
+      <p class="title-contact">{{'contactameComponent.subtitle1' | translate}}:</p>
       <p class="info-contact">3505880260</p>
     </div>
 
     <div class="info-contact-container">
-      <p class="title-contact">Correo electrónico:</p>
+      <p class="title-contact">{{'contactameComponent.subtitle2' | translate}}:</p>
       <p class="info-contact">ricardohung92@gmail.com</p>
     </div>
 
     <div class="info-contact-container">
-      <p class="title-contact">Redes sociales:</p>
+      <p class="title-contact">{{'contactameComponent.subtitle3' | translate}}:</p>
       <div class="social-media-icons">
         <img class="icon-media" src="{{media.icon}}" alt="" *ngFor="let media of socialMedia"
           (click)="redirigir(media.url)">

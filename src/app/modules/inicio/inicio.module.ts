@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { InicioRoutingModule } from './inicio-routing.module';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { TranslateModule } from '@ngx-translate/core';
 
 // Componentes
 
@@ -21,7 +22,12 @@ import { ContactameComponent } from './components/contactame/contactame.componen
     AptitudesComponent,
     ContactameComponent,
   ],
-  imports: [CommonModule, InicioRoutingModule, SlickCarouselModule],
+  imports: [
+    CommonModule,
+    InicioRoutingModule,
+    SlickCarouselModule,
+    TranslateModule,
+  ],
   exports: [
     InicioComponent,
     InicioPresentacionComponent,

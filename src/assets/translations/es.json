@@ -1,0 +1,29 @@
+{
+  "headerComponent": {
+    "link1": "Trabajos",
+    "link2": "Conocimientos",
+    "link3": "Contáctame"
+  },
+
+  "inicioComponent": {
+    "txt1": "¡Hola! Soy Ricardo",
+    "txt2": "Desarrollador frontend",
+    "txt3": "Tengo dos años de experiencia como desarrollador frontend. <br> La mayoría de mi conocimiento ha sido adquirido de manera autodidacta. <br> Actualmente me encuentro desarrollando grandes proyectos y aprendiendo nuevas tecnologías.",
+    "txt4": "Si quieres conocer más sobre mi trabajo te invito a seguir explorando mi portafolio."
+  },
+
+  "trabajosComponent": {
+    "title": "MIS TRABAJOS"
+  },
+
+  "aptitudesComponent": {
+    "title": "MIS CONOCIMIENTOS"
+  },
+
+  "contactameComponent": {
+      "title": "CONTÁCTAME",
+      "subtitle1": "Número telefónico",
+      "subtitle2": "Correo electrónico",
+      "subtitle3": "Redes sociales"
+  }
+}
