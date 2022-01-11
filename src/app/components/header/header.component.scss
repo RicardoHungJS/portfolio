@@ -55,6 +55,8 @@
         font-weight: 0;
         color: $colorSecundario;
         transition: 0.4s;
+        display: flex;
+        align-items: center;
 
         &:after {
           content: "";
@@ -133,6 +135,30 @@
             background-image: url(../../../assets/img/imagenes/banderaColombia.png);
             background-size: cover;
           }
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 992px) {
+  .headerContainer {
+    .header {
+      width: 100%;
+      height: 100%;
+      border-radius: 0;
+      padding: 0 15px;
+      grid-template-columns: 11% auto 12%;
+
+      .optionsContainer {
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+
+        .headerOption {
+          font-size: 0.9em;
+          margin: 5px;
         }
       }
     }

@@ -18,6 +18,17 @@ export class TrabajosComponent implements OnInit {
     arrows: false,
     dots: true,
     cssEase: 'cubic-bezier(.85,-0.26,.08,1.44)',
+
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          cssEase: 'linear',
+        },
+      },
+    ],
   };
 
   constructor() {
@@ -45,7 +56,7 @@ export class TrabajosComponent implements OnInit {
           'Es la primera prueba técnica realizada para entrar a una empresa, fue un reto muy entretenido en su momento.',
         imagen: './assets/img/imagenes/pruebaTecnicaPage.png',
         link: 'https://ricardohungjs.github.io/pruebaGHP/',
-      }
+      },
     ];
   }
 
