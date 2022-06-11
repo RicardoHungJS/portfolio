@@ -23,8 +23,16 @@ export class AptitudesComponent implements OnInit {
         descripcion: 'Typescript',
       },
       {
+        img: './assets/img/aptitudes-logos/react-logo.svg',
+        descripcion: 'React',
+      },
+      {
         img: './assets/img/aptitudes-logos/angular-logo.svg',
         descripcion: 'Angular',
+      },
+      {
+        img: './assets/img/aptitudes-logos/nodejs-logo.svg',
+        descripcion: 'Node.js',
       },
       {
         img: './assets/img/aptitudes-logos/css-logo.svg',

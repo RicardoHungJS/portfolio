@@ -1,5 +1,6 @@
 {
   "headerComponent": {
+    "start": "Inicio",
     "link1": "Trabajos",
     "link2": "Conocimientos",
     "link3": "Contáctame"
@@ -13,7 +14,16 @@
   },
 
   "trabajosComponent": {
-    "title": "MIS TRABAJOS"
+    "title": "MIS TRABAJOS",
+    "visitPageButton": "Visitar página",
+    "subtitle1": "Mi portafolio",
+    "description1": "Uno de los proyectos más divertidos que he realizado, mi propia página web.",
+    "subtitle2": "Página de negocios de DataiFX",
+    "description2": "Tuve la suerte de trabajar desarrollando la página web principal de DataiFX enfocada en el core de los negocios de la empresa.",
+    "subtitle3": "Página principal y administrativa de Kuepa Edutech",
+    "description3": "Tuve la oportunidad de trabajar con grandes profesionales en varias aplicaciones dentro de la pagina principal y administrativa de Kuepa, las cuales también se usan por varias entidades educativas.",
+    "subtitle4": "Primera prueba técnica",
+    "description4": "Es la primera prueba técnica realizada para entrar a una empresa, fue un reto muy entretenido en su momento."
   },
 
   "aptitudesComponent": {
@@ -22,6 +32,7 @@
 
   "contactameComponent": {
       "title": "CONTÁCTAME",
+      "formTitle": "Formulario de contacto",
       "subtitle1": "Número telefónico",
       "subtitle2": "Correo electrónico",
       "subtitle3": "Redes sociales"

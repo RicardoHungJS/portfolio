@@ -5,9 +5,9 @@
       <div ngxSlickItem class="tarjeta-trabajo" *ngFor="let tarjeta of tarjetasExp">
         <img class="back-img" src={{tarjeta.imagen}} alt="">
         <div class="text-container">
-          <h2>{{tarjeta.titulo}}</h2>
-          <p>{{tarjeta.descripcion}}</p>
-          <a href="{{tarjeta.link}}" target="_blank">Visitar página</a>
+          <h2>{{tarjeta.titulo  | translate}}</h2>
+          <p>{{tarjeta.descripcion | translate}}</p>
+          <a href="{{tarjeta.link}}" target="_blank">{{'trabajosComponent.visitPageButton' | translate}}</a>
         </div>
       </div>
     </ngx-slick-carousel>

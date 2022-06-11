@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnChanges } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -6,25 +6,26 @@ import { TranslateService } from '@ngx-translate/core';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent implements OnInit, OnChanges {
   langAns: Boolean = false;
 
-  constructor(private translate: TranslateService) {
-    this.translate.setDefaultLang('es');
-    this.translate.use('es');
-  }
+  constructor(private translate: TranslateService) {}
 
   ngOnInit(): void {
     this.cambiarIdioma(this.langAns);
   }
 
-  cambiarIdioma(ans) {
-    this.langAns = !ans
+  ngOnChanges(): void {
+    console.log('cambiando cosas');
+  }
+
+  cambiarIdioma(ans: Boolean) {
+    this.langAns = !ans;
 
     if (ans) {
-      this.translate.use('en');
-    } else {
       this.translate.use('es');
+    } else {
+      this.translate.use('en');
     }
   }
 

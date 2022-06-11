@@ -38,7 +38,7 @@
   .contac-form-container {
     position: relative;
     z-index: 10;
-    height: 70%;
+    height: fit-content;
     width: 40%;
     padding: 1em;
     backdrop-filter: blur(10px);
@@ -48,19 +48,21 @@
     flex-wrap: wrap;
     align-items: center;
 
+    .title-contact {
+      width: 100%;
+      margin: 5px 0;
+      padding: 0;
+      text-align: center;
+      font-size: 1.6em;
+      font-weight: bold;
+      color: $colorPrincipal;
+    }
+
     .info-contact-container {
       width: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
-
-      .title-contact {
-        margin: 5px 0;
-        padding: 0;
-        font-size: 1.6em;
-        font-weight: bold;
-        color: $colorPrincipal;
-      }
 
       .info-contact {
         margin: 0;
