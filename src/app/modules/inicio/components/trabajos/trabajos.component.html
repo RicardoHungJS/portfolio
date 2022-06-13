@@ -7,7 +7,9 @@
         <div class="text-container">
           <h2>{{tarjeta.titulo  | translate}}</h2>
           <p>{{tarjeta.descripcion | translate}}</p>
-          <a href="{{tarjeta.link}}" target="_blank">{{'trabajosComponent.visitPageButton' | translate}}</a>
+          <div *ngIf="tarjeta.link">
+            <a href="{{tarjeta.link}}" target="_blank">{{'trabajosComponent.visitPageButton' | translate}}</a>
+          </div>
         </div>
       </div>
     </ngx-slick-carousel>

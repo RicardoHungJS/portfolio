@@ -57,7 +57,7 @@ export class TrabajosComponent implements OnInit {
         titulo: 'trabajosComponent.subtitle1',
         descripcion:'trabajosComponent.description1',
         imagen: './assets/img/imagenes/richiPage.png',
-        link: 'http://localhost:4200/',
+        link: '',
       },
       {
         id: 2,
