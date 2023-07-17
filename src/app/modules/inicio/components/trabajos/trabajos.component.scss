@@ -2,49 +2,38 @@
 
 .trabajos-container {
   width: 100%;
-  height: 100vh;
-  scroll-snap-align: start;
+  height: fit-content;
   background-color: #ccc;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-evenly;
-  overflow: hidden;
-  padding-top: 70px;
-
+  justify-content: center;
+  padding: 4rem 2rem;
 
   .titulo-trabajos {
     width: 100%;
     height: 30px;
-    margin: 0;
+    margin-bottom: 3rem;
     color: $colorSecundario;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
   }
 
   .tarjetas-container {
-    perspective: 1000px;
     width: 100%;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
-
-    .carousel {
-      max-width: 100%;
-    }
+    gap: 1rem;
 
     .tarjeta-trabajo {
       position: relative;
-      width: 44%;
-      height: 50vh;
-      margin: 0 20px 20px 20px;
+      width: 32%;
+      aspect-ratio: 2;
+      margin: 1rem auto;
       border-radius: 10px;
       overflow: hidden;
-      -webkit-box-shadow: 10px 10px 10px 1px #0000002e;
-      -moz-box-shadow: 10px 10px 10px 1px #0000002e;
       box-shadow: 10px 10px 10px 1px #0000002e;
-      transition: all 0.5s;
+      transition: all .5s;
 
       &:hover {
         .text-container {
@@ -52,7 +41,7 @@
         }
 
         .back-img {
-          transform: scale(1.1);
+          transform: scale(1.2);
         }
       }
 
@@ -61,44 +50,45 @@
         height: 100%;
         position: absolute;
         object-fit: cover;
-        object-position: left;
         transition: all 0.5s;
       }
 
       .text-container {
-        position: relative;
+        position: absolute;
         bottom: -100%;
         width: 100%;
         height: 100%;
-        padding: 40px;
-        border: 4px solid $colorPrincipal;
+        padding: 2rem;
+        border: 2px solid #f2b138;
         border-radius: 10px;
+        -webkit-backdrop-filter: blur(5px);
         backdrop-filter: blur(5px);
         background-color: #000000af;
         color: #fff;
         display: flex;
         flex-wrap: wrap;
-        flex-direction: column;
-        align-items: center;
+        align-content: space-evenly;
         justify-content: center;
-        gap: 30px;
-        transition: all 0.5s;
+        gap: 1rem;
+        transition: all .5s;
 
         &:hover {
           bottom: 0;
         }
 
         h2 {
+          width: 100%;
           display: block;
           margin: 0;
-          font-size: 2rem;
+          font-size: 1.3rem;
           text-align: center;
           color: $colorPrincipal;
         }
 
         p {
+          width: 100%;
           margin: 0;
-          font-size: 1.2rem;
+          font-size: 0.9rem;
           font-weight: bold;
           text-align: center;
         }
@@ -109,9 +99,10 @@
           text-align: center;
           text-decoration: none;
           transition: all 0.5s;
+          font-weight: bold;
 
           &:hover {
-            color: #ebc174;
+            color: #ffe7ba;
             transform: scale(1.05);
           }
         }
@@ -121,8 +112,67 @@
 
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1030px) {
   .tarjeta-trabajo {
-    height: 400px !important;
+    width: 45% !important;
+
+    .text-container {
+      padding: 0.5rem !important;
+      gap: 5px;
+
+      h2 {
+        font-size: 1rem !important;
+        word-wrap: break-word !important;
+      }
+
+      p {
+        font-size: 0.8rem !important;
+      }
+
+      a {
+        margin: 0;
+        color: $colorPrincipal;
+        text-align: center;
+        text-decoration: none;
+        transition: all 0.5s;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .trabajos-container {
+    padding: 1rem 0.5rem;
+
+    .titulo-trabajos {
+      margin-bottom: 1rem;
+    }
+
+    .tarjeta-trabajo {
+      width: 100% !important;
+      min-height: 13rem;
+
+      .text-container {
+        padding: 0.5rem !important;
+        gap: 5px;
+
+        h2 {
+          font-size: 1rem !important;
+          word-wrap: break-word !important;
+        }
+
+        p {
+          font-size: 0.8rem !important;
+        }
+
+        a {
+          margin: 0;
+          color: $colorPrincipal;
+          text-align: center;
+          text-decoration: none;
+          transition: all 0.5s;
+        }
+      }
+    }
   }
 }

@@ -1,18 +1,19 @@
 <div class="trabajos-container">
   <h1 class="titulo-trabajos">{{'trabajosComponent.title' | translate}}</h1>
   <div class="tarjetas-container">
-    <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
-      <div ngxSlickItem class="tarjeta-trabajo" *ngFor="let tarjeta of tarjetasExp">
-        <img class="back-img" src={{tarjeta.imagen}} alt="">
-        <div class="text-container">
-          <h2>{{tarjeta.titulo  | translate}}</h2>
-          <p>{{tarjeta.descripcion | translate}}</p>
-          <div *ngIf="tarjeta.link">
-            <a href="{{tarjeta.link}}" target="_blank">{{'trabajosComponent.visitPageButton' | translate}}</a>
-          </div>
+    <div class="tarjeta-trabajo" *ngFor="let tarjeta of tarjetasExp">
+      <img class="back-img" src={{tarjeta.imagen}} alt="">
+      <div class="text-container">
+        <h2>{{tarjeta.titulo  | translate}}</h2>
+        <p>{{tarjeta.descripcion | translate}}</p>
+        <div *ngIf="tarjeta.link; else elseLink">
+          <a href="{{tarjeta.link}}" target="_blank">{{'trabajosComponent.visitPageButton' | translate}}</a>
         </div>
+        <ng-template #elseLink>
+          <a href="#"></a>
+        </ng-template>
       </div>
-    </ngx-slick-carousel>
+    </div>
   </div>
 
 </div>

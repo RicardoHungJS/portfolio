@@ -6,7 +6,6 @@
   height: 100vh;
   padding-top: 70px;
   overflow: hidden;
-  scroll-snap-align: start;
   background-color: #ccc;
   background-image: url("^assets/img/imagenes/animated-shape2.svg");
   background-size: cover;
@@ -54,7 +53,7 @@
       margin: 5px 0;
       padding: 0;
       text-align: center;
-      font-size: 1.6em;
+      font-size: 3rem;
       font-weight: bold;
       color: $colorPrincipal;
     }
@@ -68,9 +67,9 @@
       .info-contact {
         margin: 0;
         padding: 0;
-        font-size: 1.2em;
+        font-size: 2em;
         font-weight: bold;
-        color: $gris2;
+        color: $colorSecundario;
       }
 
       .social-media-icons {
@@ -91,8 +90,8 @@
           transition: all 0.4s;
 
           &:hover {
-            background-color: $colorSecundario;
-            transform: scale(1.1);
+            background-color: $colorPrincipal;
+            transform: scale(1.2);
           }
         }
       }

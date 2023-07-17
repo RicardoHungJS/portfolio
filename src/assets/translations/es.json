@@ -1,6 +1,6 @@
 {
   "headerComponent": {
-    "start": "Inicio",
+    "start": "Acerca de",
     "link1": "Trabajos",
     "link2": "Conocimientos",
     "link3": "Contáctame"
@@ -9,21 +9,26 @@
   "inicioComponent": {
     "txt1": "¡Hola! Soy Ricardo",
     "txt2": "Desarrollador frontend",
-    "txt3": "Tengo dos años de experiencia como desarrollador frontend. <br> La mayoría de mi conocimiento ha sido adquirido de manera autodidacta. <br> Actualmente me encuentro desarrollando grandes proyectos y aprendiendo nuevas tecnologías.",
-    "txt4": "Si quieres conocer más sobre mi trabajo te invito a seguir explorando mi portafolio."
+    "txt3": "Tengo dos años de sólida experiencia como desarrollador frontend, durante los cuales he tenido la oportunidad de participar en proyectos de gran envergadura. Mi constante búsqueda de conocimiento me ha llevado a estar al día con las últimas tecnologías y tendencias del campo.",
+    "txt4": "Mi portafolio es un reflejo de mi dedicación y pasión por la creación de soluciones innovadoras. En él encontrarás ejemplos de mi trabajo en proyectos desafiantes y diversos, donde he aplicado mis habilidades técnicas y mi creatividad para desarrollar interfaces atractivas y funcionales.",
+    "txt5": "Además, estoy abierto a nuevos desafíos y siempre estoy buscando expandir mis conocimientos y habilidades. Si estás interesado en conocer más sobre mi trabajo, te invito a explorar mi portafolio, donde encontrarás una muestra de mis proyectos y logros. Estoy emocionado de compartir mi experiencia contigo y espero poder contribuir con mis habilidades al éxito de futuros proyectos."
   },
 
   "trabajosComponent": {
     "title": "MIS TRABAJOS",
     "visitPageButton": "Visitar página",
     "subtitle1": "Mi portafolio",
-    "description1": "Uno de los proyectos más divertidos que he realizado, mi propia página web.",
+    "description1": "Uno de los proyectos más divertidos en los que he tenido el placer de trabajar es la creación de mi propio sitio web, donde tuve la libertad de desatar mi creatividad y mostrar mis habilidades de una manera personalizada y única.",
     "subtitle2": "Página de negocios de DataiFX",
     "description2": "Tuve la suerte de trabajar desarrollando la página web principal de DataiFX enfocada en el core de los negocios de la empresa.",
     "subtitle3": "Página principal y administrativa de Kuepa Edutech",
     "description3": "Tuve la oportunidad de trabajar con grandes profesionales en varias aplicaciones dentro de la pagina principal y administrativa de Kuepa, las cuales también se usan por varias entidades educativas.",
-    "subtitle4": "Primera prueba técnica",
-    "description4": "Es la primera prueba técnica realizada para entrar a una empresa, fue un reto muy entretenido en su momento."
+    "subtitle4": "Dashboard con cards dinámicas",
+    "description4": "Dashboard que reenderiza cards con información de manera dinámica.",
+    "subtitle5": "Rastreador IP",
+    "description5": "Rastrea el ip y los dominios para retornar la posición en un mapa.",
+    "subtitle6": "Lista de trabajos estática",
+    "description6": "Lista de trabajos en una lista dinámica que al seleccionar los tags ubicados al lado derecho de las cards filtra los resultados."
   },
 
   "aptitudesComponent": {
@@ -31,10 +36,10 @@
   },
 
   "contactameComponent": {
-      "title": "CONTÁCTAME",
-      "formTitle": "Formulario de contacto",
-      "subtitle1": "Número telefónico",
-      "subtitle2": "Correo electrónico",
-      "subtitle3": "Redes sociales"
+    "title": "CONTÁCTAME",
+    "formTitle": "Formulario de contacto",
+    "subtitle1": "Número telefónico",
+    "subtitle2": "Correo electrónico",
+    "subtitle3": "Redes sociales"
   }
 }

@@ -1,22 +1,20 @@
-import { Component, OnInit, OnChanges } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { HeaderNavigationService } from 'src/services/headerNavigationService/header-navigation.service';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
 })
-export class HeaderComponent implements OnInit, OnChanges {
+export class HeaderComponent implements OnInit {
   langAns: Boolean = false;
 
-  constructor(private translate: TranslateService) {}
+  constructor(private translate: TranslateService, private navigationService: HeaderNavigationService) {}
 
   ngOnInit(): void {
     this.cambiarIdioma(this.langAns);
-  }
-
-  ngOnChanges(): void {
-    console.log('cambiando cosas');
+    this.navigationService.setNavigationTag('about')
   }
 
   cambiarIdioma(ans: Boolean) {
@@ -29,12 +27,7 @@ export class HeaderComponent implements OnInit, OnChanges {
     }
   }
 
-  moveToSection(partOfPage) {
-    if (partOfPage != 0) {
-      let alturaPagina = document.body.clientHeight;
-      window.scroll(0, Math.round(alturaPagina / partOfPage));
-    } else {
-      window.scroll(0, 0);
-    }
+  moveToSection(headerTag: string) {
+    this.navigationService.setNavigationTag(headerTag)
   }
 }
