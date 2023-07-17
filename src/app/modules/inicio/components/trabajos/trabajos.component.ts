@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { Work } from 'src/interfaces/worksInterfaces';
 
 @Component({
   selector: 'app-trabajos',
@@ -7,7 +8,7 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./trabajos.component.scss'],
 })
 export class TrabajosComponent implements OnInit {
-  tarjetasExp: Array<Object>;
+  tarjetasExp!: Array<Work>;
 
   constructor(private translate: TranslateService) {}
 

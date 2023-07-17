@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Aptitude } from 'src/interfaces/aptitudesInterfaces';
 
 @Component({
   selector: 'app-aptitudes',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./aptitudes.component.scss'],
 })
 export class AptitudesComponent implements OnInit {
-  aptitudes: Array<Object>;
+  aptitudes: Array<Aptitude>;
 
   constructor() {
     this.aptitudes = [
@@ -16,11 +17,11 @@ export class AptitudesComponent implements OnInit {
       },
       {
         img: './assets/img/aptitudes-logos/jg-logo.svg',
-        descripcion: 'Javascript',
+        descripcion: 'JavaScript',
       },
       {
         img: './assets/img/aptitudes-logos/ts-logo.svg',
-        descripcion: 'Typescript',
+        descripcion: 'TypeScript',
       },
       {
         img: './assets/img/aptitudes-logos/react-logo.svg',
@@ -47,12 +48,16 @@ export class AptitudesComponent implements OnInit {
         descripcion: 'Bootstrap',
       },
       {
+        img: './assets/img/aptitudes-logos/tailwind-logo.svg',
+        descripcion: 'Tailwind',
+      },
+      {
         img: './assets/img/aptitudes-logos/git-logo.svg',
         descripcion: 'Git',
       },
       {
         img: './assets/img/aptitudes-logos/github-logo.svg',
-        descripcion: 'Hithub',
+        descripcion: 'Github',
       },
     ];
   }

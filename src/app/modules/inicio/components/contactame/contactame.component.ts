@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SocialMedia } from 'src/interfaces/contactMeInterfaces';
 
 @Component({
   selector: 'app-contactame',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contactame.component.scss'],
 })
 export class ContactameComponent implements OnInit {
-  socialMedia: Array<Object>;
+  socialMedia: Array<SocialMedia>;
 
   constructor() {
     this.socialMedia = [
