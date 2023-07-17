@@ -132,7 +132,7 @@
           }
         },
         "deploy": {
-          "builder": "angular-cli-ghpages:deploy"
+          "builder": "@angular-devkit/build-angular:deploy"
         }
       }
     }
