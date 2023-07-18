@@ -254,6 +254,18 @@
   }
 }
 
+@media (max-width: 425px) {
+  .info-contact-container {
+    .title-contact {
+      font-size: 1.6rem !important;
+    }
+
+    .info-contact {
+      font-size: 1.1rem !important;
+    }
+  }
+}
+
 @media (max-width: 992px) {
 
   .contac-form-container {

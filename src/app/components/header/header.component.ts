@@ -9,12 +9,16 @@ import { HeaderNavigationService } from 'src/services/headerNavigationService/he
 })
 export class HeaderComponent implements OnInit {
   langAns: Boolean = false;
+  menuShowed: Boolean = false;
 
-  constructor(private translate: TranslateService, private navigationService: HeaderNavigationService) {}
+  constructor(
+    private translate: TranslateService,
+    private navigationService: HeaderNavigationService
+  ) {}
 
   ngOnInit(): void {
     this.cambiarIdioma(this.langAns);
-    this.navigationService.setNavigationTag('about')
+    this.navigationService.setNavigationTag('about');
   }
 
   cambiarIdioma(ans: Boolean) {
@@ -28,6 +32,7 @@ export class HeaderComponent implements OnInit {
   }
 
   moveToSection(headerTag: string) {
-    this.navigationService.setNavigationTag(headerTag)
+    this.navigationService.setNavigationTag(headerTag);
+    this.menuShowed = false;
   }
 }
