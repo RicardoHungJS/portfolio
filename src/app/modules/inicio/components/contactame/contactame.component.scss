@@ -7,15 +7,19 @@
   padding-top: 70px;
   overflow: hidden;
   background-color: #ccc;
-  background-image: url("^assets/img/imagenes/animated-shape2.svg");
   background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
 
+  @media (max-width: 425px) {
+    padding-top: 4rem;
+  }
+
   .second-bg {
     position: absolute;
+    top: 0;
     z-index: 9;
     width: 140%;
     height: 100%;
@@ -40,13 +44,18 @@
     height: fit-content;
     min-height: 70vh;
     width: 40%;
-    padding: 1em;
+    padding: 1rem;
     backdrop-filter: blur(10px);
     background-color: #ffffffa9;
     border-radius: 10px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+
+    @media (max-width: 425px) {
+      width: 90%;
+      padding: 1rem !important;
+    }
 
     .title-contact {
       width: 100%;
@@ -56,56 +65,13 @@
       font-size: 3rem;
       font-weight: bold;
       color: $colorPrincipal;
-    }
 
-    .info-contact-container {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
-      .info-contact {
-        margin: 0;
-        padding: 0;
-        font-size: 2em;
-        font-weight: bold;
-        color: $colorSecundario;
+      @media (max-width: 425px) {
+        font-size: 2rem;
       }
-
-      .social-media-icons {
-        width: 100%;
-        height: 60px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        .icon-media {
-          cursor: pointer;
-          width: 40px;
-          height: 40px;
-          padding: 0;
-          margin: 0 15px;
-          border-radius: 50%;
-          // background-color: deepskyblue;
-          transition: all 0.4s;
-
-          &:hover {
-            background-color: $colorPrincipal;
-            transform: scale(1.2);
-          }
-        }
-      }
-    }
-
-    .form-title {
-      margin: 0;
-      width: 100%;
-      text-align: center;
-      color: #4b4b4b;
     }
 
     .general-label {
-      // text-align: center;
       font-size: 1.1em;
       font-weight: bold;
       color: #4b4b4b;
@@ -116,10 +82,13 @@
       width: 50%;
       height: fit-content;
       padding: 10px;
-      // background-color: #80ff0041;
       display: flex;
       flex-direction: column;
       justify-content: center;
+
+      @media (max-width: 425px) {
+        width: 100%;
+      }
 
       .text-input {
         outline: none;
@@ -174,8 +143,8 @@
         width: 100%;
         min-width: 100%;
         max-width: 100%;
-        max-height: 100px;
-        min-height: 50px;
+        max-height: 200px;
+        min-height: 100px;
         padding: 10px;
         border: 1px solid $colorSecundario;
         border-radius: 5px;
@@ -213,6 +182,19 @@
       display: flex;
       justify-content: space-evenly;
       align-items: center;
+
+      .btn-disabled {
+        width: 30%;
+        height: 35px;
+        padding: 0;
+        margin: 0;
+        border: none;
+        color: #fff;
+        font-weight: bold;
+        background-color: $gris1;
+        border-radius: 5px;
+        transition: all 0.3s;
+      }
 
       .btn-ok {
         width: 30%;
@@ -269,9 +251,6 @@
 @media (max-width: 992px) {
 
   .contac-form-container {
-    width: 85% !important;
-    height: 80% !important;
-    padding: 5em 0 !important;
     justify-content: center;
 
     .info-contact-container {

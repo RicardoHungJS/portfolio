@@ -1,6 +1,6 @@
 {
   "headerComponent": {
-    "start": "Acerca de",
+    "start": "Inicio",
     "link1": "Trabajos",
     "link2": "Conocimientos",
     "link3": "Contáctame"
@@ -8,31 +8,27 @@
 
   "inicioComponent": {
     "txt1": "¡Hola! Soy Ricardo",
-    "txt2": "Desarrollador frontend",
-    "txt3": "Tengo dos años de sólida experiencia como desarrollador frontend, durante los cuales he tenido la oportunidad de participar en proyectos de gran envergadura. Mi constante búsqueda de conocimiento me ha llevado a estar al día con las últimas tecnologías y tendencias del campo.",
-    "txt4": "Mi portafolio es un reflejo de mi dedicación y pasión por la creación de soluciones innovadoras. En él encontrarás ejemplos de mi trabajo en proyectos desafiantes y diversos, donde he aplicado mis habilidades técnicas y mi creatividad para desarrollar interfaces atractivas y funcionales.",
-    "txt5": "Además, estoy abierto a nuevos desafíos y siempre estoy buscando expandir mis conocimientos y habilidades. Si estás interesado en conocer más sobre mi trabajo, te invito a explorar mi portafolio, donde encontrarás una muestra de mis proyectos y logros. Estoy emocionado de compartir mi experiencia contigo y espero poder contribuir con mis habilidades al éxito de futuros proyectos."
+    "txt2": "Desarrollador frontend con +4 años de experiencia creando aplicaciones web para grandes compañías e importantes clientes.",
+    "txt3": "Ávido de nuevos desafíos, busco constantemente crecimiento. Explora mi portafolio para ver ejemplos de mi trabajo y logros. Estoy emocionado por compartir mi experiencia y aportar mis habilidades a proyectos futuros."
   },
 
   "trabajosComponent": {
     "title": "MIS TRABAJOS",
     "visitPageButton": "Visitar página",
-    "subtitle1": "Mi portafolio",
-    "description1": "Uno de los proyectos más divertidos en los que he tenido el placer de trabajar es la creación de mi propio sitio web, donde tuve la libertad de desatar mi creatividad y mostrar mis habilidades de una manera personalizada y única.",
-    "subtitle2": "Página de negocios de DataiFX",
-    "description2": "Tuve la suerte de trabajar desarrollando la página web principal de DataiFX enfocada en el core de los negocios de la empresa.",
-    "subtitle3": "Página principal y administrativa de Kuepa Edutech",
-    "description3": "Tuve la oportunidad de trabajar con grandes profesionales en varias aplicaciones dentro de la pagina principal y administrativa de Kuepa, las cuales también se usan por varias entidades educativas.",
-    "subtitle4": "Dashboard con cards dinámicas",
-    "description4": "Dashboard que reenderiza cards con información de manera dinámica.",
-    "subtitle5": "Rastreador IP",
-    "description5": "Rastrea el ip y los dominios para retornar la posición en un mapa.",
-    "subtitle6": "Lista de trabajos estática",
-    "description6": "Lista de trabajos en una lista dinámica que al seleccionar los tags ubicados al lado derecho de las cards filtra los resultados."
+    "subtitle1": "Página principal y administrativa de Kuepa Edutech",
+    "description1": "Colaboré con un equipo de profesionales en el desarrollo de varias aplicaciones dentro de la página principal y el panel administrativo de Kuepa Edutech. Estas aplicaciones son utilizadas por diversas entidades educativas, lo que permitió mejorar la experiencia de usuario y optimizar los procesos internos de gestión.",
+    "subtitle2": "MIIA Colombia",
+    "description2": "Contribuí al desarrollo tanto del backend como del frontend de la aplicación MIIA Colombia. Mi trabajo se centró en entregar soluciones de alta calidad en los plazos acordados, lo que resultó en una mejora significativa para el cliente.",
+    "subtitle3": "Dashboard con cards dinámicas",
+    "description3": "Desarrollé un dashboard que presenta información mediante cards dinámicas, adaptándose de manera flexible a los datos disponibles. Esta funcionalidad ofrece una visión general y actualizada de los datos relevantes para la toma de decisiones.",
+    "subtitle4": "Lista de trabajos estática",
+    "description4": "Diseñé una lista de trabajos que permite una interacción dinámica, donde la selección de etiquetas ubicadas junto a las cards permite filtrar los resultados según los criterios deseados. Esto proporciona una experiencia de usuario más personalizada y eficiente.",
+    "subtitle5": "IP tracker",
+    "description5": "Desarrollé una herramienta de seguimiento de direcciones IP y dominios que proporciona la ubicación geográfica correspondiente en un mapa interactivo. Esta funcionalidad es útil para monitorear y visualizar la actividad de red de forma intuitiva."
   },
 
   "aptitudesComponent": {
-    "title": "MIS CONOCIMIENTOS"
+    "title": "STACK TECNOLÓGICO"
   },
 
   "contactameComponent": {
@@ -41,5 +37,14 @@
     "subtitle1": "Número telefónico",
     "subtitle2": "Correo electrónico",
     "subtitle3": "Redes sociales"
+  },
+
+  "form": {
+    "label1": "Nombres",
+    "label2": "Apellidos",
+    "label3": "Teléfono",
+    "label4": "Correo electrónico",
+    "label5": "Mensaje",
+    "placeholer1": "Escribe tu mensaje aquí"
   }
 }

@@ -1,6 +1,6 @@
 {
   "headerComponent": {
-    "start": "About",
+    "start": "Home",
     "link1": "Works",
     "link2": "Knowledge",
     "link3": "Contact me"
@@ -8,31 +8,27 @@
 
   "inicioComponent": {
     "txt1": "Hi! i'm Ricardo",
-    "txt2": "Front end developer",
-    "txt3": "I have two years of solid experience as a frontend developer, during which I have had the opportunity to be involved in large-scale projects. My constant quest for knowledge has kept me up-to-date with the latest technologies and trends in the field.",
-    "txt4": "My portfolio is a reflection of my dedication and passion for creating innovative solutions. You will find examples of my work on challenging and diverse projects, where I have applied my technical skills and creativity to develop attractive and functional interfaces.",
-    "txt5": "Furthermore, I am open to new challenges and always seeking to expand my knowledge and skills. If you are interested in learning more about my work, I invite you to explore my portfolio, where you will find a sample of my projects and achievements. I am excited to share my experience with you and look forward to contributing my skills to the success of future projects."
+    "txt2": "Front end developer with over 4 years of experience creating web applications for large companies and significant clients.",
+    "txt3": "Eager for new challenges, I constantly seek growth. Explore my portfolio for a glimpse of my work and achievements. I'm excited to share my experience and contribute my skills to future projects."
   },
 
   "trabajosComponent": {
     "title": "MY WORKS",
     "visitPageButton": "Visit page",
-    "subtitle1": "My portfolio",
-    "description1": "One of the funniest projects I've had the pleasure of working on is creating my own website, where I had the freedom to unleash my creativity and showcase my skills in a personalized and unique way.",
-    "subtitle2": "DataiFX business page",
-    "description2": "I was lucky enough to work developing the DataiFX main website focused on the core business of the company.",
-    "subtitle3": "Main and administrative page of Kuepa Edutech",
-    "description3": "I had the opportunity to work with great professionals in several applications within the main and administrative page of Kuepa, which are also used by various educational entities.",
-    "subtitle4": "Dashboard with dynamic cards",
-    "description4": "Dashboard that dynamically renders cards with information.",
-    "subtitle5": "IP tracker",
-    "description5": "Track the ip and domains to return the position on a map.",
-    "subtitle6": "Static job list",
-    "description6": "List of jobs in a dynamic list that by selecting the tags located on the right side of the cards filters the results."
+    "subtitle1": "Main and Administrative Page of Kuepa Edutech",
+    "description1": "I collaborated with a team of professionals in developing various applications within the main page and administrative panel of Kuepa Edutech. These applications are used by diverse educational entities, allowing for an enhanced user experience and optimized internal management processes.",
+    "subtitle2": "MIIA Colombia",
+    "description2": "I contributed to the development of both the backend and frontend of the MIIA Colombia application. My work focused on delivering high-quality solutions within agreed-upon deadlines, resulting in significant improvement for the client.",
+    "subtitle3": "Dashboard with Dynamic Cards",
+    "description3": "I developed a dashboard that presents information through dynamic cards, adapting flexibly to the available data. This functionality provides an up-to-date overview of relevant data for decision-making.",
+    "subtitle4": "Static Job List",
+    "description4": "I designed a job list that allows for dynamic interaction, where selecting tags located alongside the cards filters the results according to desired criteria. This provides a more personalized and efficient user experience.",
+    "subtitle5": "IP Tracker",
+    "description5": "I developed a tool for tracking IP addresses and domains, providing corresponding geographic location on an interactive map. This functionality is useful for monitoring and visualizing network activity intuitively."
   },
 
   "aptitudesComponent": {
-    "title": "MY KNOWLEDGE"
+    "title": "TECH STACK"
   },
 
   "contactameComponent": {
@@ -41,5 +37,14 @@
     "subtitle1": "Phone",
     "subtitle2": "Email",
     "subtitle3": "Social networks"
+  },
+
+  "form": {
+    "label1": "Name",
+    "label2": "Lastname",
+    "label3": "Phone number",
+    "label4": "Email",
+    "label5": "Message",
+    "placeholer1": "Write your message here"
   }
 }

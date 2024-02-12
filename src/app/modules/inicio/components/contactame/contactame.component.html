@@ -1,62 +1,93 @@
 <div class="contactame-container">
-  <h1 class="titulo-trabajos">{{'contactameComponent.title' | translate}}</h1>
   <div class="second-bg"></div>
-  <form class="contac-form-container">
+  <form
+    class="contac-form-container"
+    [formGroup]="contactForm"
+    (submit)="onFormSubmit()"
+  >
+    <h1 class="title-contact">
+      {{ "contactameComponent.formTitle" | translate }}
+    </h1>
 
-    <!-- <p class="title-contact">{{'contactameComponent.formTitle' | translate}}</p> -->
-
-    <!-- <div class="form-input-box">
-      <label class="general-label" for="">Nombres</label>
-      <input class="text-input" placeholder="Nombres" type="text" name="" id="">
+    <div class="form-input-box">
+      <label class="general-label" for="nombres">{{
+        "form.label1" | translate
+      }}</label>
+      <input
+        class="text-input"
+        [placeholder]="'form.label1' | translate"
+        type="text"
+        id="nombres"
+        formControlName="names"
+      />
       <span class="txt-error"></span>
     </div>
 
     <div class="form-input-box">
-      <label class="general-label" for="">Apellidos</label>
-      <input class="text-input" placeholder="Apellidos" type="text" name="" id="">
+      <label class="general-label" for="apellidos">{{
+        "form.label2" | translate
+      }}</label>
+      <input
+        class="text-input"
+        [placeholder]="'form.label2' | translate"
+        type="text"
+        id="apellidos"
+        formControlName="lastNames"
+      />
       <span class="txt-error"></span>
     </div>
 
     <div class="form-input-box">
-      <label class="general-label" for="">Teléfono</label>
-      <input class="text-input" placeholder="Teléfono o celular" type="text" name="" id="">
+      <label class="general-label" for="telefono">{{
+        "form.label3" | translate
+      }}</label>
+      <input
+        class="text-input"
+        [placeholder]="'form.label3' | translate"
+        type="text"
+        id="telefono"
+        formControlName="phoneNumber"
+      />
       <span class="txt-error"></span>
     </div>
 
     <div class="form-input-box">
-      <label class="general-label" for="">Correo electrónico</label>
-      <input class="text-input" placeholder="Correo electrónico" type="text" name="" id="">
+      <label class="general-label" for="email">{{
+        "form.label4" | translate
+      }}</label>
+      <input
+        class="text-input"
+        [placeholder]="'form.label4' | translate"
+        type="text"
+        id="email"
+        formControlName="email"
+      />
       <span class="txt-error"></span>
     </div>
 
     <div class="form-textarea-box">
-      <label class="general-label" for="">Mensaje</label>
-      <textarea class="textarea-input" placeholder="Escribe tu mensaje aquí" name="" id="" rows="3"></textarea>
+      <label class="general-label" for="mensaje">{{
+        "form.label5" | translate
+      }}</label>
+      <textarea
+        class="textarea-input"
+        [placeholder]="'form.placeholer1' | translate"
+        id="mensaje"
+        rows="3"
+        formControlName="message"
+      ></textarea>
       <span class="txt-error"></span>
-    </div> -->
-
-    <div class="info-contact-container">
-      <p class="title-contact">{{'contactameComponent.subtitle1' | translate}}:</p>
-      <p class="info-contact">+57 3505880260</p>
     </div>
 
-    <div class="info-contact-container">
-      <p class="title-contact">{{'contactameComponent.subtitle2' | translate}}:</p>
-      <p class="info-contact">ricardohung92@gmail.com</p>
+    <div class="buttons-container">
+      <button class="btn-cancel" (click)="clearForm()">LIMPIAR</button>
+      <button
+        type="submit"
+        [class]="!contactForm.valid ? 'btn-disabled' : 'btn-ok'"
+      >
+        ENVIAR
+      </button>
     </div>
-
-    <div class="info-contact-container">
-      <p class="title-contact">{{'contactameComponent.subtitle3' | translate}}</p>
-      <div class="social-media-icons">
-        <img class="icon-media" src="{{media.icon}}" alt="" *ngFor="let media of socialMedia"
-          (click)="redirigir(media.url)">
-      </div>
-    </div>
-
-    <!-- <div class="buttons-container">
-      <button class="btn-cancel">LIMPIAR</button>
-      <button type="submit" class="btn-ok">ENVIAR</button>
-    </div> -->
-
   </form>
 </div>
+<app-loading *ngIf="isLoading"></app-loading>

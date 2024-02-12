@@ -23,13 +23,12 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
 
     .tarjeta-trabajo {
       position: relative;
       width: 32%;
       aspect-ratio: 2;
-      margin: 1rem auto;
       border-radius: 10px;
       overflow: hidden;
       box-shadow: 10px 10px 10px 1px #0000002e;
