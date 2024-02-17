@@ -11,9 +11,11 @@ export class MailService {
   constructor(private readonly http: HttpClient) {}
 
   baseUri = environment.baseUri;
+
   emailUri = `${this.baseUri}mailer`;
 
   sendEmail(emailInput: EmailInput): Observable<string> {
+    console.log(this.baseUri);
     return this.http.post(this.emailUri, emailInput, {
       responseType: 'text',
     });
