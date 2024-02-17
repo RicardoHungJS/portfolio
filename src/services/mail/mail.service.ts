@@ -15,7 +15,7 @@ export class MailService {
   emailUri = `${this.baseUri}mailer`;
 
   sendEmail(emailInput: EmailInput): Observable<string> {
-    console.log(this.baseUri);
+    console.log(this.emailUri);
     return this.http.post(this.emailUri, emailInput, {
       responseType: 'text',
     });
