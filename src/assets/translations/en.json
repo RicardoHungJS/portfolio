@@ -9,7 +9,8 @@
   "inicioComponent": {
     "txt1": "Hi! i'm Ricardo",
     "txt2": "Front end developer with over 4 years of experience creating web applications for large companies and significant clients.",
-    "txt3": "Eager for new challenges, I constantly seek growth. Explore my portfolio for a glimpse of my work and achievements. I'm excited to share my experience and contribute my skills to future projects."
+    "txt3": "Eager for new challenges, I constantly seek growth. Explore my portfolio for a glimpse of my work and achievements. I'm excited to share my experience and contribute my skills to future projects.",
+    "cvButton": "Download CV"
   },
 
   "trabajosComponent": {
@@ -45,6 +46,8 @@
     "label3": "Phone number",
     "label4": "Email",
     "label5": "Message",
-    "placeholer1": "Write your message here"
+    "placeholer1": "Write your message here",
+    "clarButton": "Reset",
+    "sendButton": "Send"
   }
 }

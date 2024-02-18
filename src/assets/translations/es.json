@@ -9,7 +9,8 @@
   "inicioComponent": {
     "txt1": "¡Hola! Soy Ricardo",
     "txt2": "Desarrollador frontend con +4 años de experiencia creando aplicaciones web para grandes compañías e importantes clientes.",
-    "txt3": "Ávido de nuevos desafíos, busco constantemente crecimiento. Explora mi portafolio para ver ejemplos de mi trabajo y logros. Estoy emocionado por compartir mi experiencia y aportar mis habilidades a proyectos futuros."
+    "txt3": "Ávido de nuevos desafíos, busco constantemente crecimiento. Explora mi portafolio para ver ejemplos de mi trabajo y logros. Estoy emocionado por compartir mi experiencia y aportar mis habilidades a proyectos futuros.",
+    "cvButton": "Descargar CV"
   },
 
   "trabajosComponent": {
@@ -45,6 +46,8 @@
     "label3": "Teléfono",
     "label4": "Correo electrónico",
     "label5": "Mensaje",
-    "placeholer1": "Escribe tu mensaje aquí"
+    "placeholer1": "Escribe tu mensaje aquí",
+    "clarButton": "Limpiar",
+    "sendButton": "Enviar"
   }
 }

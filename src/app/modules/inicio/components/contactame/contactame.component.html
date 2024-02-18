@@ -80,12 +80,14 @@
     </div>
 
     <div class="buttons-container">
-      <button class="btn-cancel" (click)="clearForm()">LIMPIAR</button>
+      <button class="btn-cancel" (click)="clearForm()">
+        {{ "form.clarButton" | translate | uppercase }}
+      </button>
       <button
         type="submit"
         [class]="!contactForm.valid ? 'btn-disabled' : 'btn-ok'"
       >
-        ENVIAR
+        {{ "form.sendButton" | translate | uppercase }}
       </button>
     </div>
   </form>

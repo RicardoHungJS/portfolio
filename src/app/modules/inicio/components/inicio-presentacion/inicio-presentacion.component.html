@@ -6,7 +6,7 @@
       <h2>{{ "inicioComponent.txt2" | translate }}</h2>
       <div class="inicioPresentacionContainer__buttons-container">
         <app-icon-button
-          buttonText="Download curriculum"
+          [buttonText]="'inicioComponent.cvButton' | translate"
           buttonIconUrl="../../../assets/img/icons/file-download.svg"
           (clickEvent)="
             redirect(
