@@ -4,6 +4,27 @@
     <div class="information">
       <h1>{{ "inicioComponent.txt1" | translate }}</h1>
       <h2>{{ "inicioComponent.txt2" | translate }}</h2>
+      <div class="inicioPresentacionContainer__buttons-container">
+        <app-icon-button
+          buttonText="Download curriculum"
+          buttonIconUrl="../../../assets/img/icons/file-download.svg"
+          (clickEvent)="
+            redirect(
+              'https://firebasestorage.googleapis.com/v0/b/portafolio-rhl.appspot.com/o/documents%2FCV_EN_RicardoHung.pdf?alt=media&token=6d5b36d1-89c9-45e5-a036-40fcf06a39bb'
+            )
+          "
+        ></app-icon-button>
+        <app-icon-button
+          buttonText="Linkedin"
+          buttonIconUrl="../../../assets/img/icons/linkedin.svg"
+          (clickEvent)="redirect('https://www.linkedin.com/in/rjh92/')"
+        ></app-icon-button>
+        <app-icon-button
+          buttonText="Github"
+          buttonIconUrl="../../../assets/img/icons/github.svg"
+          (clickEvent)="redirect('https://github.com/RicardoHungJS')"
+        ></app-icon-button>
+      </div>
     </div>
   </div>
 </div>

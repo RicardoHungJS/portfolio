@@ -15,16 +15,16 @@
   "trabajosComponent": {
     "title": "MIS TRABAJOS",
     "visitPageButton": "Visitar página",
-    "subtitle1": "Página principal y administrativa de Kuepa Edutech",
-    "description1": "Colaboré con un equipo de profesionales en el desarrollo de varias aplicaciones dentro de la página principal y el panel administrativo de Kuepa Edutech. Estas aplicaciones son utilizadas por diversas entidades educativas, lo que permitió mejorar la experiencia de usuario y optimizar los procesos internos de gestión.",
-    "subtitle2": "MIIA Colombia",
-    "description2": "Contribuí al desarrollo tanto del backend como del frontend de la aplicación MIIA Colombia. Mi trabajo se centró en entregar soluciones de alta calidad en los plazos acordados, lo que resultó en una mejora significativa para el cliente.",
-    "subtitle3": "Dashboard con cards dinámicas",
-    "description3": "Desarrollé un dashboard que presenta información mediante cards dinámicas, adaptándose de manera flexible a los datos disponibles. Esta funcionalidad ofrece una visión general y actualizada de los datos relevantes para la toma de decisiones.",
+    "subtitle1": "MIIA Colombia",
+    "description1": "Contribuí al desarrollo tanto del backend como del frontend de la aplicación MIIA Colombia. Mi trabajo se centró en entregar soluciones de alta calidad en los plazos acordados, lo que resultó en una mejora significativa para el cliente.",
+    "subtitle2": "Página principal y administrativa de Kuepa Edutech",
+    "description2": "Colaboré con un equipo de profesionales en el desarrollo de varias aplicaciones dentro de la página principal y el panel administrativo de Kuepa Edutech. Estas aplicaciones son utilizadas por diversas entidades educativas, lo que permitió mejorar la experiencia de usuario y optimizar los procesos internos de gestión.",
+    "subtitle3": "IP tracker",
+    "description3": "Desarrollé una herramienta de seguimiento de direcciones IP y dominios que proporciona la ubicación geográfica correspondiente en un mapa interactivo. Esta funcionalidad es útil para monitorear y visualizar la actividad de red de forma intuitiva.",
     "subtitle4": "Lista de trabajos estática",
     "description4": "Diseñé una lista de trabajos que permite una interacción dinámica, donde la selección de etiquetas ubicadas junto a las cards permite filtrar los resultados según los criterios deseados. Esto proporciona una experiencia de usuario más personalizada y eficiente.",
-    "subtitle5": "IP tracker",
-    "description5": "Desarrollé una herramienta de seguimiento de direcciones IP y dominios que proporciona la ubicación geográfica correspondiente en un mapa interactivo. Esta funcionalidad es útil para monitorear y visualizar la actividad de red de forma intuitiva."
+    "subtitle5": "Dashboard con cards dinámicas",
+    "description5": "Desarrollé un dashboard que presenta información mediante cards dinámicas, adaptándose de manera flexible a los datos disponibles. Esta funcionalidad ofrece una visión general y actualizada de los datos relevantes para la toma de decisiones."
   },
 
   "aptitudesComponent": {

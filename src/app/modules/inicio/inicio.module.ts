@@ -14,6 +14,7 @@ import { InicioPresentacionComponent } from './components/inicio-presentacion/in
 import { TrabajosComponent } from './components/trabajos/trabajos.component';
 import { InicioComponent } from './inicio.component';
 import { LoadingComponent } from 'src/app/components/loading/loading.component';
+import { IconButtonComponent } from 'src/app/components/icon-button/icon-button.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { LoadingComponent } from 'src/app/components/loading/loading.component';
     InicioRoutingModule,
     TranslateModule,
     ReactiveFormsModule,
+    IconButtonComponent,
   ],
   exports: [
     InicioComponent,

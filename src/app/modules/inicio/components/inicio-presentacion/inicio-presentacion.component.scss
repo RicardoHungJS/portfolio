@@ -59,6 +59,7 @@
     justify-content: space-evenly;
     align-self: center;
     transition: all .6s;
+    gap: 1rem;
 
     h1 {
       color: $colorPrincipal;
@@ -70,6 +71,13 @@
       color: $colorSecundarioClaro;
       margin: 5px 0;
       word-wrap: break-word;
+    }
+
+    .inicioPresentacionContainer__buttons-container {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
     }
   }
 }

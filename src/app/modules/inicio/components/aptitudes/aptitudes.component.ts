@@ -36,6 +36,18 @@ export class AptitudesComponent implements OnInit {
         descripcion: 'Node.js',
       },
       {
+        img: './assets/img/aptitudes-logos/express-logo.svg',
+        descripcion: 'Express',
+      },
+      {
+        img: './assets/img/aptitudes-logos/nest-logo.svg',
+        descripcion: 'NestJs',
+      },
+      {
+        img: './assets/img/aptitudes-logos/graphql-logo.svg',
+        descripcion: 'Graphql',
+      },
+      {
         img: './assets/img/aptitudes-logos/css-logo.svg',
         descripcion: 'CSS',
       },
