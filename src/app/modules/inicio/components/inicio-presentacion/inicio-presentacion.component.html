@@ -8,11 +8,7 @@
         <app-icon-button
           [buttonText]="'inicioComponent.cvButton' | translate"
           buttonIconUrl="../../../assets/img/icons/file-download.svg"
-          (clickEvent)="
-            redirect(
-              'https://firebasestorage.googleapis.com/v0/b/portafolio-rhl.appspot.com/o/documents%2FCV_EN_RicardoHung.pdf?alt=media&token=6d5b36d1-89c9-45e5-a036-40fcf06a39bb'
-            )
-          "
+          (clickEvent)="redirect('cv')"
         ></app-icon-button>
         <app-icon-button
           buttonText="Linkedin"
