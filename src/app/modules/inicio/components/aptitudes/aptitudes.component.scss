@@ -62,21 +62,39 @@
   }
 
   .tarjeta-aptitudes {
-    width: 70%;
+    width: 80%;
     height: 75%;
     padding: 10px;
     border-radius: 10px;
     transition: all 0.3s;
     display: flex;
     flex-wrap: wrap;
+    align-content: center;
     justify-content: center;
-    align-items: center;
+    gap: 1.3rem;
+
+    @include stylesBasedOnSize('small') {
+      width: 100%;
+    }
+
+    @include stylesBasedOnSize('medium') {
+      width: 100%;
+    }
 
     .aptitud-container {
       position: relative;
-      width: 20%;
-      height: 20%;
-      margin: 15px;
+      width: 10rem;
+      aspect-ratio: 1/1;
+
+      @include stylesBasedOnSize('small') {
+        width: 4rem;
+        aspect-ratio: 1/1
+      }
+
+      @include stylesBasedOnSize('medium') {
+        width: 6rem;
+        aspect-ratio: 1/1
+      }
 
       .aptitud {
         perspective: 400px;
@@ -92,6 +110,18 @@
 
           .back {
             transform: rotateY(0deg);
+
+            @include stylesBasedOnSize('small') {
+              p {
+                font-size: 0.7rem;
+              }
+            }
+
+            @include stylesBasedOnSize('medium') {
+              p {
+                font-size: 1rem;
+              }
+            }
           }
         }
 
@@ -121,7 +151,16 @@
             height: 100%;
             padding: 15px;
             object-fit: contain;
-            object-position: center
+            object-position: center;
+
+            @include stylesBasedOnSize('small') {
+              padding: 0.4rem;
+
+            }
+
+            @include stylesBasedOnSize('medium') {
+              padding: 0.4rem;
+            }
           }
         }
 
@@ -151,25 +190,15 @@
           p {
             font-size: 2em;
             font-weight: bold;
+
+            @include stylesBasedOnSize('small') {
+              font-size: 0.7rem;
+            }
+
+            @include stylesBasedOnSize('medium') {
+              font-size: 1rem;
+            }
           }
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 992px) {
-  .tarjeta-aptitudes {
-
-    width: 100% !important;
-
-    .aptitud-container {
-      width: 30% !important;
-      margin: 0 5px !important;
-
-      .back {
-        p {
-          font-size: 1.1em !important;
         }
       }
     }

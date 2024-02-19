@@ -52,7 +52,7 @@
     flex-wrap: wrap;
     align-items: center;
 
-    @media (max-width: 425px) {
+    @media (max-width: 768px) {
       width: 90%;
       padding: 1rem !important;
     }
@@ -86,7 +86,7 @@
       flex-direction: column;
       justify-content: center;
 
-      @media (max-width: 425px) {
+      @media (max-width: 768px) {
         width: 100%;
       }
 
@@ -236,7 +236,7 @@
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 768px) {
   .info-contact-container {
     .title-contact {
       font-size: 1.6rem !important;

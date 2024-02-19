@@ -13,3 +13,27 @@ $negro: #000;
   -moz-user-select: none;
   -ms-user-select: none;
 }
+
+@mixin stylesBasedOnSize($size) {
+  @if $size =="small" {
+    @media (max-width: 426px) {
+      @content;
+    }
+  }
+
+  @else if $size =="medium" {
+    @media (min-width: 426px) and (max-width: 1024px) {
+      @content;
+    }
+  }
+
+  @else if $size =="large" {
+    @media (min-width: 1025px) {
+      @content;
+    }
+  }
+
+  @else {
+    @content;
+  }
+}

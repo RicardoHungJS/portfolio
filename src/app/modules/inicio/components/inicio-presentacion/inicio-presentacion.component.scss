@@ -35,6 +35,7 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
     place-items: center;
+    gap: 2rem;
 
     .picture {
       width: 30rem;
@@ -137,11 +138,8 @@
       }
 
       .information {
-        width: 95%;
-        height: 80%;
-        margin: 70px 0 0 0;
-        background: linear-gradient(145deg, #a4a4a487 0%, #000000c3 74%);
-        padding: 5% 5%;
+        width: 100%;
+        height: 40%;
 
         h1 {
           color: $colorPrincipal;
@@ -154,6 +152,7 @@
           font-size: 1rem;
           color: $colorPrincipal;
           margin: 5px 0;
+          text-wrap: balance;
         }
 
         p {
@@ -161,6 +160,10 @@
           font-size: 0.7rem;
           margin: 5px 0;
           line-height: 1.3rem;
+        }
+
+        .inicioPresentacionContainer__buttons-container {
+          justify-content: center;
         }
       }
     }
