@@ -3,7 +3,7 @@
 .trabajos-container {
   width: 100%;
   height: fit-content;
-  background-color: #ccc;
+  background-color: $gris3;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -14,7 +14,7 @@
     width: 100%;
     height: 30px;
     margin-bottom: 3rem;
-    color: $colorSecundario;
+    color: $gris1;
     text-align: center;
   }
 
