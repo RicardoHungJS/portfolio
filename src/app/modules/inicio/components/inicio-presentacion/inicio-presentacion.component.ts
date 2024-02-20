@@ -1,5 +1,6 @@
 import { Component, OnInit, inject } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { GoogleAnalyticsService } from 'src/services/googleAnalyticsService/google-analytics.service';
 
 @Component({
   selector: 'app-inicio-presentacion',
@@ -8,16 +9,23 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class InicioPresentacionComponent {
   translateService = inject(TranslateService);
+  gaTrack = inject(GoogleAnalyticsService);
 
   public redirect(url: string): void {
     if (url === 'cv') {
       this.translateService.get('inicioComponent.cvUrl').subscribe({
         next: (res) => {
           window.open(res, '_blank');
+          this.gaTrack.trackEvent('cv_downloaded', {
+            cv: res,
+          });
         },
       });
     } else {
       window.open(url, '_blank');
+      this.gaTrack.trackEvent('social_redirection', {
+        social_media: url,
+      });
     }
   }
 }

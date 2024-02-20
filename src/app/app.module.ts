@@ -11,6 +11,13 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
+import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
+import {
+  getAnalytics,
+  provideAnalytics,
+  ScreenTrackingService,
+} from '@angular/fire/analytics';
+import { environment } from 'src/environments/environment';
 
 // ----------------------------------------------------
 
@@ -34,8 +41,10 @@ export function createTranslateLoader(http: HttpClient) {
         deps: [HttpClient],
       },
     }),
+    provideFirebaseApp(() => initializeApp(environment.firebaseConfig)),
+    provideAnalytics(() => getAnalytics()),
   ],
-  providers: [],
+  providers: [ScreenTrackingService],
   bootstrap: [AppComponent],
   exports: [],
 })
