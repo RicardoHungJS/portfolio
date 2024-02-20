@@ -3,7 +3,7 @@
   <form
     class="contac-form-container"
     [formGroup]="contactForm"
-    (submit)="onFormSubmit()"
+    (ngSubmit)="onFormSubmit()"
   >
     <h2 class="title-contact">
       {{ "contactameComponent.formTitle" | translate }}
