@@ -256,7 +256,7 @@
     .floating-menu-options {
       position: absolute;
       width: 100%;
-      height: calc(100vh - 60px);
+      height: calc(100dvh - 60px);
       padding: 0;
       background-color: #0000009c;
       backdrop-filter: blur(5px);
