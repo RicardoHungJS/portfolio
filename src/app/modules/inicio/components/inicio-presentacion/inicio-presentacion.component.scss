@@ -4,8 +4,8 @@
   position: relative;
   width: 100%;
   height: 100dvh;
-  background-color: $colorSecundario;
-  background-image: url('^assets/img/imagenes/animated-shape1.svg');
+  background-color: $blanco;
+  background-image: url('^assets/img/imagenes/animated-waves.svg');
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
@@ -22,8 +22,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #000000d0;
-    backdrop-filter: blur(15px);
+    background-color: #00000052;
+    backdrop-filter: blur(0.3rem);
   }
 
   .informationContainer {
@@ -38,12 +38,11 @@
     gap: 2rem;
 
     .picture {
-      width: 30rem;
+      width: 30vw;
       aspect-ratio: 1/1;
       filter: drop-shadow(-15px 10px 10px #00000035);
       transform: rotateY(180deg);
-      background-color: $colorSecundario;
-      background-image: url('^assets/img/imagenes/richi-peque.webp');
+      background-image: url('^assets/img/imagenes/richi2.webp');
       background-repeat: no-repeat;
       background-size: cover;
       background-position: top;
@@ -83,7 +82,7 @@
   }
 }
 
-@media (max-width: 1200px) {
+@include stylesBasedOnSize('large') {
   .inicioPresentacionContainer {
     .informationContainer {
       .picture {
@@ -93,15 +92,18 @@
   }
 }
 
-@media (max-width: 768px) {
+@include stylesBasedOnSize('medium') {
   .inicioPresentacionContainer {
     .informationContainer {
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
+      gap: 0.5rem;
 
       .picture {
-        display: none;
+        filter: drop-shadow(-5px 5px 10px #00000035);
+        width: 20rem;
       }
 
       .information {
@@ -114,32 +116,42 @@
 
         h2 {
           font-size: 2rem;
-          color: $colorPrincipal;
           margin: 5px 0;
           text-align: center;
+          text-wrap: balance;
         }
 
         p {
           color: #ffffff;
           font-size: 1rem;
           margin: 5px 0;
-          line-height: 1.5em;
         }
       }
+    }
+
+    .inicioPresentacionContainer__buttons-container {
+      justify-content: center;
     }
   }
 }
 
-@media (max-width: 500px) {
+@include stylesBasedOnSize('small') {
   .inicioPresentacionContainer {
     .informationContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+
       .picture {
-        display: none;
+        filter: drop-shadow(-5px 5px 10px #00000035);
+        width: 15rem;
       }
 
       .information {
         width: 100%;
-        height: 40%;
+        height: 25%;
 
         h1 {
           color: $colorPrincipal;
@@ -150,8 +162,8 @@
 
         h2 {
           font-size: 1rem;
-          color: $colorPrincipal;
           margin: 5px 0;
+          text-align: center;
           text-wrap: balance;
         }
 

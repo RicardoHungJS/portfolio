@@ -3,25 +3,28 @@
 .aptitudes-container {
   position: relative;
   width: 100%;
-  height: 100dvh;
+  min-height: 100dvh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
-  align-items: center;
-  padding-top: 70px;
   overflow: hidden;
   background-color: $colorSecundario;
+  padding: 5rem 0 0 0;
+
+  @include stylesBasedOnSize('large') {
+    justify-content: space-evenly;
+  }
+
+  @include stylesBasedOnSize('medium') {
+    justify-content: space-evenly;
+  }
 
   .titulo-trabajos {
-    position: relative;
     width: 100%;
     height: 30px;
-    margin: 0;
+    margin-bottom: 1rem;
     color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
   }
 
   @keyframes slide {
@@ -34,16 +37,9 @@
     }
   }
 
-  .general-blur {
-    position: absolute;
-    width: 100%;
-    height: 140vh;
-    backdrop-filter: blur(10px);
-  }
-
   .tarjeta-aptitudes {
-    width: 80%;
-    height: 75%;
+    width: 90%;
+    height: 80%;
     padding: 10px;
     border-radius: 10px;
     transition: all 0.3s;
@@ -51,7 +47,7 @@
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
-    gap: 1.3rem;
+    gap: 2rem;
 
     @include stylesBasedOnSize('small') {
       width: 100%;
@@ -63,7 +59,7 @@
 
     .aptitud-container {
       position: relative;
-      width: 10rem;
+      width: 11rem;
       aspect-ratio: 1/1;
 
       @include stylesBasedOnSize('small') {

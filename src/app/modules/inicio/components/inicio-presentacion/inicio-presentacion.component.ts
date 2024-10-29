@@ -7,9 +7,14 @@ import { GoogleAnalyticsService } from 'src/services/googleAnalyticsService/goog
   templateUrl: './inicio-presentacion.component.html',
   styleUrls: ['./inicio-presentacion.component.scss'],
 })
-export class InicioPresentacionComponent {
+export class InicioPresentacionComponent implements OnInit {
   translateService = inject(TranslateService);
   gaTrack = inject(GoogleAnalyticsService);
+  years: number = 0;
+
+  ngOnInit(): void {
+    this.calculateYearsPassed();
+  }
 
   public redirect(url: string): void {
     if (url === 'cv') {
@@ -27,5 +32,22 @@ export class InicioPresentacionComponent {
         social_media: url,
       });
     }
+  }
+
+  private calculateYearsPassed(): void {
+    const startDate = new Date('2020-01-01');
+    const currentDate = new Date();
+
+    let yearsPassed = currentDate.getFullYear() - startDate.getFullYear();
+
+    if (
+      currentDate.getMonth() < startDate.getMonth() ||
+      (currentDate.getMonth() === startDate.getMonth() &&
+        currentDate.getDate() < startDate.getDate())
+    ) {
+      yearsPassed--;
+    }
+
+    this.years = yearsPassed;
   }
 }

@@ -1,7 +1,7 @@
 <div class="trabajos-container">
   <h2 class="titulo-trabajos">{{'trabajosComponent.title' | translate}}</h2>
   <div class="tarjetas-container">
-    <div class="tarjeta-trabajo" *ngFor="let tarjeta of tarjetasExp">
+    <div class="tarjeta-trabajo animationBlockFromBottom" *ngFor="let tarjeta of tarjetasExp">
       <img class="back-img" src={{tarjeta.imagen}} alt="">
       <div class="text-container">
         <h2>{{tarjeta.titulo  | translate}}</h2>

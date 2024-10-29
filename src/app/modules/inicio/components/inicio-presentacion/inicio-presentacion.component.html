@@ -3,7 +3,7 @@
     <div class="picture"></div>
     <div class="information">
       <h1>{{ "inicioComponent.txt1" | translate }}</h1>
-      <h2>{{ "inicioComponent.txt2" | translate }}</h2>
+      <h2>{{ "inicioComponent.txt2" | translate: { years: years } }}</h2>
       <div class="inicioPresentacionContainer__buttons-container">
         <app-icon-button
           [buttonText]="'inicioComponent.cvButton' | translate"
