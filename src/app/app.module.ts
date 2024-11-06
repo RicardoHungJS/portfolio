@@ -18,6 +18,7 @@ import {
   ScreenTrackingService,
 } from '@angular/fire/analytics';
 import { environment } from 'src/environments/environment';
+import { FooterComponent } from './components/footer/footer.component';
 
 // ----------------------------------------------------
 
@@ -28,7 +29,7 @@ export function createTranslateLoader(http: HttpClient) {
 // ----------------------------------------------------
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent],
+  declarations: [AppComponent, HeaderComponent, FooterComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

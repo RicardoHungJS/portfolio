@@ -15,6 +15,7 @@ import { TrabajosComponent } from './components/trabajos/trabajos.component';
 import { InicioComponent } from './inicio.component';
 import { LoadingComponent } from 'src/app/components/loading/loading.component';
 import { IconButtonComponent } from 'src/app/components/icon-button/icon-button.component';
+import { ColorBgComponent } from 'src/app/components/color-bg/color-bg.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { IconButtonComponent } from 'src/app/components/icon-button/icon-button.
     AptitudesComponent,
     ContactameComponent,
     LoadingComponent,
+    ColorBgComponent
   ],
   imports: [
     CommonModule,
