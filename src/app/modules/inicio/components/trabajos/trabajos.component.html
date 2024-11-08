@@ -2,12 +2,12 @@
   <h2 class="titulo-trabajos">{{'trabajosComponent.title' | translate}}</h2>
   <div class="tarjetas-container">
     <div class="tarjeta-trabajo animationBlockFromBottom" *ngFor="let tarjeta of tarjetasExp">
-      <img class="back-img" src={{tarjeta.imagen}} alt="">
+      <img class="back-img" src={{tarjeta.imagen}} alt="{{tarjeta.titulo}}" title="{{tarjeta.titulo | translate}}">
       <div class="text-container">
-        <h2>{{tarjeta.titulo  | translate}}</h2>
+        <h3>{{tarjeta.titulo  | translate}}</h3>
         <p>{{tarjeta.descripcion | translate}}</p>
         <div *ngIf="tarjeta.link; else elseLink">
-          <a href="{{tarjeta.link}}" target="_blank">{{'trabajosComponent.visitPageButton' | translate}}</a>
+          <a href="{{tarjeta.link}}" target="_blank" title="{{tarjeta.titulo | translate}}">{{'trabajosComponent.visitPageButton' | translate}}</a>
         </div>
         <ng-template #elseLink>
           <a href="#"></a>

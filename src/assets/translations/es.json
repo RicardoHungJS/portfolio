@@ -7,9 +7,10 @@
   },
 
   "inicioComponent": {
-    "txt1": "¡Hola! Soy Ricardo",
-    "txt2": "Desarrollador frontend con +{{years}} años de experiencia creando aplicaciones web para grandes compañías e importantes clientes.",
-    "txt3": "Ávido de nuevos desafíos, busco constantemente crecimiento. Explora mi portafolio para ver ejemplos de mi trabajo y logros. Estoy emocionado por compartir mi experiencia y aportar mis habilidades a proyectos futuros.",
+    "txt1": "¡Hola! Soy Ricardo,",
+    "txt2": "Desarrollador fullstack",
+    "txt3": "Con más de {{years}} años creando soluciones web para empresas de alto impacto y clientes destacados.",
+    "txt4": "Ávido de nuevos desafíos, busco constantemente crecimiento. Explora mi portafolio para ver ejemplos de mi trabajo y logros. Estoy emocionado por compartir mi experiencia y aportar mis habilidades a proyectos futuros.",
     "cvButton": "Descargar CV",
     "cvUrl": "https://firebasestorage.googleapis.com/v0/b/portafolio-rhl.appspot.com/o/documents%2FCV_RicardoHung.pdf?alt=media&token=58d67829-5ebd-4947-a00f-e272f58cb482"
   },
